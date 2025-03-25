@@ -24,7 +24,7 @@ app.get('/power', (req, res) => {
     res.json({ result: Math.pow(num1, num2) });
 });
 
-// Square Root (√num1)
+// Square Root 
 app.get('/sqrt', (req, res) => {
     const num1 = parseFloat(req.query.num1);
     if (isNaN(num1) || num1 < 0) {
